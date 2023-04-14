@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random color generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+	<center>
+	<div class="col md-6">
+		<h1 class="btn btn-info heading">Random Color Generator</h1>
+		<br>
+		<br>
+		<form id="options">
+	<table>
+		<tbody>
+		<tr><td style="padding-top: 0;">
+	<label>Number of Colors:</label>
+	<input id="qty" min="1" max="20" type="number" name="qty" value="1" class="form-control input-sm clamp-qty" style="display:inline-block;">
+	<div class="col-md-6 vertical-center">
+	<div id="loading_result" class="small-img-results">
+		<div class="container">
+			<div>
+			  <input type="color" id="color">
+			  <h4 id="text">#000000</h4>
+			  <p>click to change color</p>
+			</div>
+		  </div>
+		  
+<br>
+	</div></div>
+</td></tr>
+	<tr>
+		<td colspan="2">
+		<input type="hidden" name="random" value="66">
+		<input id="btn_submit_generator" type="submit" name="submit" class="btn btn-primary" value="Generate random Colors">
+	</td>
+	</tr>
+</tbody>
+		</table>
+		</form>
+	</div>
+</center>
+</body>
+</html>
